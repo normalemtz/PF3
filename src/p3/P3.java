@@ -47,8 +47,7 @@ public class P3 {
                     b = Math.min(num1, num2);
                     
                     MCD = MCD(a,b);            
-                    MCM = (a*MCD)/b;
-                    
+                    MCM = (a*b)/MCD;
                     JOptionPane.showMessageDialog(null,"Mínimo común múltiplo "
                                                         + "(MCM): "+MCM);        
                     break;
