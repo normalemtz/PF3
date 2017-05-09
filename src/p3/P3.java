@@ -34,11 +34,7 @@ public class P3 {
                     a = Math.max(num1,num2);
                     b = Math.min(num1,num2);
                     
-                    do{
-                    MCD=b;
-                    b=a%b;
-                    a=MCD;
-                    } while (b!=0);
+                    MCD = MCD(a,b);
                                         
                     JOptionPane.showMessageDialog(null,"Máximo común divisor "
                                                         + "(MCD): "+MCD);
@@ -49,6 +45,7 @@ public class P3 {
                     num2 = solicitaEntero("Ingrese el segundo número");
                     a = Math.max(num1, num2);
                     b = Math.min(num1, num2);
+                    
                     MCD = MCD(a,b);            
                     MCM = (a*MCD)/b;
                     
